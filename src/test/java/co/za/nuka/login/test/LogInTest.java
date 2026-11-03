@@ -1,4 +1,4 @@
-package co.za.nuka.test.login.test;
+package co.za.nuka.login.test;
 
 import org.testng.annotations.Test;
 

@@ -1,4 +1,4 @@
-package co.za.nuka.test.login.model;
+package co.za.nuka.login.model;
 
 import lombok.*;
 
