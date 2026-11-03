@@ -12,7 +12,7 @@ public final class ConfigManager {
 
     private static final String DEFAULT_ENV = "dev";
     private static final List<String> SUPPORT_ENVS = Arrays.asList("dev","prod");
-    private static final String DEFAULT_BASE_URL = "";
+    private static final String DEFAULT_BASE_URL = "https://phafoga.35.176.178.171.nip.io:8443/";
 
     private static final ConfigManager INSTANCE = new ConfigManager();
 

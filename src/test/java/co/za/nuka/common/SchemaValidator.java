@@ -6,6 +6,8 @@ import io.restassured.mapper.ObjectMapperSerializationContext;
 import org.hamcrest.Matcher;
 import org.hamcrest.StringDescription;
 
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
+
 public final class SchemaValidator {
 
     private static final ObjectMapper MAPPER = new ObjectMapper();
@@ -22,7 +24,7 @@ public final class SchemaValidator {
             throw  new AssertionError("Failed to serialise ....... '" + scenarioName + "' : " + e.getMessage(), e);
         }
 
-        Matcher<String> schemaMatcher = matches.JsonSchemaInClasspath(schemaPath);
+        Matcher<String> schemaMatcher = matchesJsonSchemaInClasspath(schemaPath);
         if(!schemaMatcher.matches(json)){
             StringDescription desc = new StringDescription();
             schemaMatcher.describeMismatch(json,desc);
