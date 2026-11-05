@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 public class LogInTest {
 
     @Test
-    public void SampleTest(){
+    public void logInTest(){
 
     }
 }

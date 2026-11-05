@@ -1,8 +1,7 @@
 package co.za.nuka.common;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import io.restassured.mapper.ObjectMapperDeserializationContext;
-import io.restassured.mapper.ObjectMapperSerializationContext;
+
 import org.hamcrest.Matcher;
 import org.hamcrest.StringDescription;
 

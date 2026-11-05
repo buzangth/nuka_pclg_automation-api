@@ -97,7 +97,7 @@ public final class ConfigManager {
     }
 
     public boolean isSslEnabled(){
-        return Boolean.parseBoolean(properties.getProperty("ssl_enlaned","true"));
+        return Boolean.parseBoolean(properties.getProperty("ssl_enabled","true"));
     }
     public String get(String key){
         return properties.getProperty(key);

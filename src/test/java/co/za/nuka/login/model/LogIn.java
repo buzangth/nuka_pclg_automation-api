@@ -7,7 +7,7 @@ import lombok.*;
 @Setter @Getter @ToString
 public class LogIn {
 
-    private String userName;
+    private String email;
     private String password;
 
 }
